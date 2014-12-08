@@ -1,0 +1,31 @@
+[user]
+	name = 
+	email = 
+[alias]
+	co = checkout
+	ci = commit
+	st = status -uall
+	sdiff = diff --cached
+	pull = pull --rebase
+	undo = reset --soft HEAD~1
+[push]
+	default = simple
+[merge]
+	tool = p4merge
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow
+	frag = magenta
+	old = red
+	new = green
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
