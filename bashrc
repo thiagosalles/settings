@@ -33,9 +33,9 @@ function apagabranch() {
 	echo git branch -D $1
 }
 
-#if [ -f ~/dotfiles/bashcolors ]; then
-#        . ~/dotfiles/bashcolors
-#fi
+if [ -f ~/dotfiles/bashcolors ]; then
+        . ~/dotfiles/bashcolors
+fi
 
 
 if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh ]; then
