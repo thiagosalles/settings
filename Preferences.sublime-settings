@@ -1,0 +1,17 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+	"folder_exclude_patterns":
+	[
+		"ninja_build",
+		".git",
+		".ccache",
+		".pki"
+	],
+	"font_face": "Monaco",
+	"font_size": 12.0,
+	"ignored_packages": [],
+	"vintage_start_in_command_mode": true,
+	"always_prompt_for_file_reload": true,
+	"highlight_line": true,
+	"bold_folder_labels": true
+}
