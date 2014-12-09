@@ -40,6 +40,10 @@ set wildmode=longest,list,full
 set wildmenu
 "set softtabstop=2
 
+" Mapping other file extensions
+au BufNewFile,BufRead *.ino set filetype=arduino
+au BufNewFile,BufRead *.pde set filetype=arduino
+
 " #######################
 " # PRETTY TAB NUMBERS! #
 set tabline=%!MyTabLine()
