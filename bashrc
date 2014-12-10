@@ -51,10 +51,10 @@ if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
   if [ "$?" -eq "0" ]; then \
     # @4 - Clean repository - nothing to commit
-    echo "'$Yellow'"$(__git_ps1 " (%s)"); \
+    echo "'$Yellow'"$(__git_ps1 "(%s)"); \
   else \
     # @5 - Changes to working tree
-    echo "'$IRed'"$(__git_ps1 " (%s)"); \
+    echo "'$IRed'"$(__git_ps1 "(%s)"); \
   fi)"; \
 fi)'
 export PS1=$PS1$Color_Off' \$ ';
