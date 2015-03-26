@@ -37,6 +37,10 @@ if [ -f ~/dotfiles/bashcolors ]; then
         . ~/dotfiles/bashcolors
 fi
 
+if [ -f ~/dotfiles/git-prompt.sh ]; then
+	. ~/dotfiles/git-prompt.sh
+fi
+
 
 if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh ]; then
 	source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
