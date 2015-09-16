@@ -4,6 +4,16 @@ export GREP_OPTIONS='--color=auto'
 export LC_CTYPE=en_US.iso-8859-1
 export LANG="$LC_CTYPE"
 
+### Added by the Heroku Toolbelt
+if [ -d "/usr/local/heroku/bin" ]
+	export PATH="/usr/local/heroku/bin:$PATH"
+fi
+
+# Composer bin
+if [ -d "$HOME/.composer/vendor/bin" ]; then
+	export PATH="$HOME/.composer/vendor/bin:$PATH"
+fi
+
 # Aliases for VIM
 alias vi='vim'
 alias vimdiff="vimdiff -c 'windo set wrap'"
