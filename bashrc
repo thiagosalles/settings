@@ -5,7 +5,7 @@ export LC_CTYPE=en_US.iso-8859-1
 export LANG="$LC_CTYPE"
 
 ### Added by the Heroku Toolbelt
-if [ -d "/usr/local/heroku/bin" ]
+if [ -d "/usr/local/heroku/bin" ]; then
 	export PATH="/usr/local/heroku/bin:$PATH"
 fi
 
