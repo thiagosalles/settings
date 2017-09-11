@@ -7,6 +7,8 @@ set autoindent
 set shiftwidth=4
 set tabstop=4
 
+set backspace=indent,eol,start
+
 " Mouse scroll/select
 set mouse=a
 " select when using the mouse

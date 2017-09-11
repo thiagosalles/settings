@@ -29,6 +29,7 @@ alias tags='git tag | sort -V'
 
 # Other Aliases
 alias ls="ls -alG"
+alias gg="git grep"
 
 # Functions
 parse_git_branch() {

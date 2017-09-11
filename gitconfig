@@ -8,10 +8,6 @@
 	sdiff = diff --cached
 	pull = pull --rebase
 	undo = reset --soft HEAD~1
-[push]
-	default = simple
-[merge]
-	tool = p4merge
 [color]
 	branch = auto
 	diff = auto
