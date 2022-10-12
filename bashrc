@@ -1,8 +1,9 @@
 # .bashrc
 
 export GREP_OPTIONS='--color=auto'
-export LC_CTYPE=en_US.iso-8859-1
-export LANG="$LC_CTYPE"
+#export LC_CTYPE=en_US.iso-8859-1
+#export LANG="$LC_CTYPE"
+export LANG=en_US.UTF-8
 
 ### Added by the Heroku Toolbelt
 if [ -d "/usr/local/heroku/bin" ]; then
@@ -14,6 +15,10 @@ if [ -d "$HOME/.composer/vendor/bin" ]; then
 	export PATH="$HOME/.composer/vendor/bin:$PATH"
 fi
 
+# Aliases for Node
+alias i='npm install'
+alias y="yarn"
+
 # Aliases for VIM
 alias vi='vim'
 alias vimdiff="vimdiff -c 'windo set wrap'"
@@ -24,12 +29,19 @@ alias pega="git fetch origin; git pull --rebase origin \$(parse_git_branch)"
 alias manda="git push origin \$(parse_git_branch)"
 alias desfaz="git reset --hard origin/\$(parse_git_branch)"
 alias tags='git tag | sort -V'
+alias gg='git grep'
+alias gd='git diff'
 #alias open_modified="vim -p \`git status --porcelain | sed -ne 's/^ M /\/home\/tlima\/bomnegocio\//p'\`"
 #alias add_new="git add -N \`git status --porcelain | sed -ne 's/^?? /\/home\/tlima\/bomnegocio\//p'\`"
 
 # Other Aliases
-alias ls="ls -alG"
-alias gg="git grep"
+#alias ls="ls -alG"
+alias compose-restart='docker-compose down --remove-orphans && docker-compose up -d --build'
+alias olx="cd $HOME/Projects/OLX/"
+alias acc="cd $HOME/Projects/OLX/Accounts/"
+alias chat="cd $HOME/Projects/OLX/Messaging/"
+alias apps="cd $HOME/Projects/OLX/Apps/olx-mobile"
+alias ads="cd $HOME/Projects/OLX/Ads/"
 
 # Functions
 parse_git_branch() {
@@ -44,12 +56,20 @@ function apagabranch() {
 	echo git branch -D $1
 }
 
+function dbash() {
+	docker exec -ti $1 bash
+}
+
 if [ -f ~/dotfiles/bashcolors ]; then
         . ~/dotfiles/bashcolors
 fi
 
 if [ -f ~/dotfiles/git-prompt.sh ]; then
 	. ~/dotfiles/git-prompt.sh
+fi
+
+if [ -f ~/Projects/OLX/olx-vpn-dns/olx_vpn_dns.sh ]; then
+	alias vpn="$HOME/Projects/OLX/olx-vpn-dns/olx_vpn_dns.sh"
 fi
 
 
