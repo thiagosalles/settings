@@ -6,8 +6,9 @@
 	ci = commit
 	st = status -uall
 	sdiff = diff --cached
-	pull = pull --rebase
 	undo = reset --soft HEAD~1
+[pull]
+	rebase = true
 [color]
 	branch = auto
 	diff = auto
