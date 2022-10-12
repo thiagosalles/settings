@@ -16,15 +16,15 @@
 	diff = auto
 	status = auto
 [color "branch"]
-	current = yellow
-	local = yellow
-	remote = green
+	current = magenta
+	local = green
+	remote = cyan
 [color "diff"]
-	meta = yellow
+	meta = cyan
 	frag = magenta
 	old = red
 	new = green
 [color "status"]
-	added = yellow
-	changed = green
+	added = green
+	changed = red
 	untracked = cyan
