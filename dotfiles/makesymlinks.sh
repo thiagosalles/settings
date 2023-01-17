@@ -9,20 +9,15 @@
 
 ########## Variables
 
-dotfiles_dir=~/dotfiles                      # dotfiles directory
-backup_dir=~/dotfiles/backup                 # old dotfiles backup directory
-files="bash_profile bashrc vimrc gitconfig"  # list of files/folders to symlink in homedir
+dotfiles_dir=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )  # dotfiles directory
+backup_dir=$dotfiles_dir/backup  # dotfiles backup directory
+files="vimrc gitconfig"          # list of files/folders to symlink in homedir
 
 ##########
 
 # create dotfiles_old in homedir
 echo -n "Creating $backup_dir for backup of any existing dotfiles in ~ ... "
 mkdir -p $backup_dir
-echo "done"
-
-# change to the dotfiles directory
-echo -n "Changing to the $dotfiles_dir directory ... "
-cd $dotfiles_dir
 echo "done"
 
 # move any existing dotfiles in homedir to backup directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
