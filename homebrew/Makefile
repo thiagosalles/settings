@@ -11,7 +11,7 @@ update-formulas:
 	@echo Done!
 
 install-casks:
-	@echo "➡️  Installing Homebrew Casks...\n"
+	@echo "\n➡️  Installing Homebrew Casks...\n"
 	@for cask in $(shell cat casks); do \
 		printf "\033[1m$$cask...\033[0m "; \
 		result="$$(brew install --cask "$$cask" 2>/dev/null | tee /dev/tty)"; \
@@ -19,10 +19,10 @@ install-casks:
 			echo "Already installed!"; \
 		fi; \
 	done
-	@echo "\nDone installing casks!"
+	@echo "\n✅ Done installing casks!"
 
 install-formulas:
-	@echo "➡️  Installing Homebrew Formulas...\n"
+	@echo "\n➡️  Installing Homebrew Formulas...\n"
 	@for formula in $(shell cat formulas); do \
 		printf "\033[1m$$formula...\033[0m "; \
 		result="$$(brew install "$$formula" 2>/dev/null | tee /dev/tty)"; \
@@ -34,6 +34,6 @@ install-formulas:
 			echo "Already installed!"; \
 		fi; \
 	done
-	@echo "\nDone installing formulas!"
+	@echo "\n✅ Done installing formulas!"
 
 install: install-casks install-formulas

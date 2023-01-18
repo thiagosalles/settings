@@ -1,7 +1,9 @@
-Dotfiles
+Settings
 ========
 
-I'm starting to put my dotfiles here. (WIP)
+- Homebrew casks and formulas instalation
+- Dotfiles configuration
+- Macbook Settings
 
 Credits
 ========
