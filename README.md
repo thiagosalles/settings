@@ -21,7 +21,7 @@ make setup
 iTerm2 Configuration
 ====================
 
-Open the `.itermcolors` file from apps folder, the color settings will be imported into iTerm2.
+Open the `.itermcolors` file from apps folder. The color settings will be imported into iTerm2.
 
 Now, apply the imported settings in iTerm through iTerm → preferences → profiles → colors → load presets. 
 
