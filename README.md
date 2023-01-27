@@ -18,6 +18,13 @@ Then run the following command from the root folder:
 make setup
 ```
 
+iTerm2 Configuration
+====================
+
+Open the `.itermcolors` file from apps folder, the color settings will be imported into iTerm2.
+
+Now, apply the imported settings in iTerm through iTerm → preferences → profiles → colors → load presets. 
+
 Credits
 ========
 
@@ -27,3 +34,4 @@ Credits
 * https://macos-defaults.com/
 * https://github.com/freekmurze/dotfiles/blob/main/macos/set-defaults.sh
 * https://github.com/joeyhoer/starter/tree/master/system
+* https://gist.github.com/kevin-smets/8568070
