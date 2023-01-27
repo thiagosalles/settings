@@ -7,11 +7,6 @@
 # Modified by: https://github.com/thiagosalles
 ############################
 
-########## Oh My Zsh + Powerlevel10k
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-
 ########## Variables
 
 dotfiles_dir=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )  # dotfiles directory

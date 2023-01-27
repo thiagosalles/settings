@@ -154,7 +154,7 @@ function apagabranch() {
 # # # # # # # # # # #
 
 # Enable rbenv by default
-eval "$(rbenv init - zsh)"
+#eval "$(rbenv init - zsh)"
 
 # Enable nvm
 export NVM_DIR="$HOME/.nvm"
@@ -167,18 +167,16 @@ source /usr/local/opt/asdf/libexec/asdf.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export GITHUB_TOKEN=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
-
-export PATH="/usr/local/opt/libxslt/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/libxslt/lib"
-export CPPFLAGS="-I/usr/local/opt/libxslt/include"
-export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl@1.1)"
-export PATH="/usr/local/opt/autoconf@2.69/bin:$PATH"
-export MACOSX_DEPLOYMENT_TARGET="12.6"
+#export PATH="/usr/local/opt/libxslt/bin:$PATH"
+#export LDFLAGS="-L/usr/local/opt/libxslt/lib"
+#export CPPFLAGS="-I/usr/local/opt/libxslt/include"
+#export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl@1.1)"
+#export PATH="/usr/local/opt/autoconf@2.69/bin:$PATH"
+#export MACOSX_DEPLOYMENT_TARGET="12.6"
 #export ASDF_KERL_VERSION="2.2.4"
-export LDFLAGS="-L$(brew --prefix openssl@1.1)/lib"
-export CFLAGS="-I$(brew --prefix openssl@1.1)/include/"
-export CPPFLAGS="-I$(brew --prefix openssl@1.1)/include/"
+#export LDFLAGS="-L$(brew --prefix openssl@1.1)/lib"
+#export CFLAGS="-I$(brew --prefix openssl@1.1)/include/"
+#export CPPFLAGS="-I$(brew --prefix openssl@1.1)/include/"
 
 # set PATH to include Android SDK if exists
 if [ -d "$HOME/Library/Android/Sdk/" ] ; then
