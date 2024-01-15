@@ -135,6 +135,7 @@ alias acc="cd $HOME/Projects/OLX/Accounts/"
 alias chat="cd $HOME/Projects/OLX/Messaging/"
 alias apps="cd $HOME/Projects/OLX/Apps/olx-mobile"
 alias ads="cd $HOME/Projects/OLX/Ads/"
+alias ck="cd $HOME/Projects/OLX/ContentKnowledge"
 if [ -f ~/Projects/OLX/olx-vpn-dns/olx_vpn_dns.sh ]; then
   alias vpn="$HOME/Projects/OLX/olx-vpn-dns/olx_vpn_dns.sh"
 fi
@@ -162,7 +163,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Enable ASDF
-source /usr/local/opt/asdf/libexec/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
